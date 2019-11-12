@@ -1,0 +1,201 @@
+// top
+.t-0 {
+  top: 0;
+}
+
+
+.t-4 {
+  top: 4px;
+}
+
+.t-6 {
+  top: 6px;
+}
+
+.t-8 {
+  top: 8px;
+}
+
+.t-12 {
+  top: 12px;
+}
+
+.t-16 {
+  top: 16px;
+}
+
+.t-20 {
+  top: 20px;
+}
+
+.t-34 {
+  top: 34px;
+}
+
+.t-n4 {
+  top: -4px
+}
+
+.t-n10 {
+  top: -10px
+}
+
+
+
+// right
+.r-n5 {
+  right: -5px;
+}
+
+.r-0 {
+  right: 0;
+}
+
+.r-4 {
+  right: 4px;
+}
+
+.r-8 {
+  right: 8px;
+}
+
+.r-12 {
+  right: 12px;
+}
+
+.r-16 {
+  right: 16px;
+}
+
+.r-20 {
+  right: 20px;
+}
+
+.r-n4 {
+  right: -4px;
+}
+
+.r-n12 {
+  right: -12px;
+}
+.r-n10 {
+  right: -10px;
+}
+
+
+// bottom
+.b-0 {
+  bottom: 0;
+}
+
+.b-12 {
+  bottom: 12px;
+}
+
+.b-16 {
+  bottom: 16px;
+}
+
+.b-32 {
+  bottom: 32px;
+}
+
+.b-48 {
+  bottom: 48px;
+}
+
+.b-56 {
+  bottom: 56px;
+}
+
+.b-80 {
+  bottom: 80px;
+}
+
+.b-88 {
+  bottom: 88px;
+}
+
+.b-104 {
+  bottom: 104px;
+}
+
+// left
+
+.l-0 {
+  left: 0;
+}
+
+.l-2 {
+  left: 2px !important;
+}
+
+.l-8 {
+  left: 8px !important;
+}
+
+.l-12 {
+  left: 12px;
+}
+
+.l-16 {
+  left: 16px;
+}
+
+.l-25 {
+  left: 25px;
+}
+
+
+
+//
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+// absloute center
+.absolute-center {
+  top: 0px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+}
+
+.absolute-center-n10 {
+  top: -10px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+}
+
+// fixed bottom
+.fixed-bottom {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+// right-top
+.right-top {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+// right-center
+.right-center-24 {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 0;
+}
+
+
+// special
+.icon-checked-position {
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  display: none;
+}
