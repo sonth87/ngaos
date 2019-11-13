@@ -1,4 +1,4 @@
-@for $i from 1 through 50 {
+@for $i from 1 through 100 {
     .px-#{$i},
     .pl-#{$i} {
         padding-left: #{$i}px !important;
@@ -6,5 +6,13 @@
     .px-#{$i},
     .pr-#{$i} {
         padding-right: #{$i}px !important;
+    }
+    .py-#{$i},
+    .pt-#{$i} {
+        padding-top: #{$i}px !important;
+    }
+    .py-#{$i},
+    .pb-#{$i} {
+        padding-bottom: #{$i}px !important;
     }
 }

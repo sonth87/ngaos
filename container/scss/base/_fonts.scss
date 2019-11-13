@@ -131,15 +131,39 @@
   font-style: normal;
 }
 
-//@font-face {
-//  font-family: 'Roboto';
-//  src: url('../font/Roboto-ThinItalic.eot');
-//  src: url('../font/Roboto-ThinItalic.eot?#iefix') format('embedded-opentype'),
-//  url('../font/Roboto-ThinItalic.woff2') format('woff2'),
-//  url('../font/Roboto-ThinItalic.woff') format('woff'),
-//  url('../font/Roboto-ThinItalic.ttf') format('truetype'),
-//  url('../font/Roboto-ThinItalic.svg#Roboto-ThinItalic') format('svg');
-//  font-weight: 100;
-//  font-style: italic;
-//}
+@font-face {
+  font-family: 'Playfair';
+  src: url('../font/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('../font/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('../font/PlayfairDisplay-Black.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('../font/PlayfairDisplay-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Playfair';
+  src: url('../font/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
 /* All fonts family here */

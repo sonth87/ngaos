@@ -1,3 +1,5 @@
+@import './button.scss';
+
 /*
     Header
 */
@@ -35,6 +37,7 @@
     .banner {
         .slide-banner {
             min-height: 500px;
+            margin-bottom: 0;
             img {
                 max-width: 100%;
             }
@@ -62,4 +65,11 @@
             }
         }
     }
+}
+
+.heading {
+    font-size: 40px;
+    line-height: 53px;
+    font-weight: 500;
+    font-family: Playfair, Roboto;
 }
