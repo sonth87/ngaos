@@ -1,0 +1,65 @@
+/*
+    Header
+*/
+.st-header {
+    .header {
+        height: 63px;
+        background: #fff;
+
+        &-function {
+            img {
+                height: 18px;
+            }
+            .search {
+                img {
+                    height: 15px;
+                }
+            }
+        }
+    }
+
+    .menu {
+        background: $color-2;
+        height: 30px;
+
+        ul.menu-bar {
+            font-size: 12px;
+            line-height: 16px;
+            > li {
+                padding: 0 24px;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .banner {
+        .slide-banner {
+            min-height: 500px;
+            img {
+                max-width: 100%;
+            }
+        }
+        .slick-dots {
+            transform: translateY(-200%);
+            li {
+                margin: 0;
+
+                button {
+                    &::before {
+                        color: #FFF;
+                        font-size: 10px;
+                        opacity: 1;
+                    }
+                }
+                &.slick-active {
+                    button {
+                        &::before {
+                            color: $color-1;
+                            font-size: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

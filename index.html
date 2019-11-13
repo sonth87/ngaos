@@ -5,25 +5,82 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>CMS</title>
+    <title>NGAOS</title>
+    <!-- base css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="dist/css/style.css" />
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+
+    <!-- font awesome -->
+    <link href="node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" rel="stylesheet">
+    <link href="node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet">
+    <link href="node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet">
+
+    <!-- extension css -->
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" href="node_modules/slick-carousel/slick/slick-theme.css" />
+
+    <!-- base script -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="node_modules/simple-scrollspy/dist/simple-scrollspy.min.js"></script>
-    <script src="dist/js/all.js"></script>
+    <script src="dist/js/script.js"></script>
+
+    <!-- extension js -->
+    <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
 </head>
 
 <body class="landing-page">
     <!-- Header -->
     <section class="st-header">
-        <!-- Logo -->
-        <div class="container d-flex justify-content-between mt-20">
-            <div class="logo">
-                <img src="dist/img/logo.svg" class="mw-100 mh-100" />
+        <div class="header d-flex flex-center">
+            <div class="container d-flex">
+                <div class="hamberger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="logo text-center flex-1">
+                    NGAOS
+                </div>
+                <div class="header-function d-flex">
+                    <div class="favorite-list px-6">
+                        <img src="dist/img/flower.svg" class="mw-100 mh-100" />
+                    </div>
+                    <div class="search px-6">
+                        <img src="dist/img/magnifying-glass.svg" class="mw-100 mh-100" />
+                    </div>
+                    <div class="mini-cart px-6">
+                        <img src="dist/img/shopping-bag.svg" class="mw-100 mh-100" />
+                    </div>
+                </div>
             </div>
-            <div class="logo_2">
-                <img src="dist/img/logo_2.svg" class="mw-100 mh-100" />
+        </div>
+
+        <!-- Menu -->
+        <div class="menu">
+            <div class="container h-100">
+                <ul class="menu-bar d-flex flex-center h-100">
+                    <li>Tất cả sản phẩm</li>
+                    <li>Sale</li>
+                    <li>Lookbook</li>
+                    <li>balo to</li>
+                    <li>balo bé</li>
+                    <li>Túi chéo</li>
+                    <li>Ví</li>
+                    <li>Phụ Kiện túi</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="banner">
+            <div class="container">
+                <div class="slide-banner">
+                    <div>
+                        <img src="dist/img/Image 10.png" />
+                    </div>
+                    <div>
+                        <h3>2</h3>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -31,7 +88,7 @@
 
     <!-- Body -->
     <section class="st-body">
-        
+
     </section>
     <!-- End Body -->
 

@@ -1,0 +1,10 @@
+@for $i from 1 through 50 {
+    .px-#{$i},
+    .pl-#{$i} {
+        padding-left: #{$i}px !important;
+    }
+    .px-#{$i},
+    .pr-#{$i} {
+        padding-right: #{$i}px !important;
+    }
+}

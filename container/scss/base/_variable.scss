@@ -1,0 +1,329 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// Color system
+
+$white: #fff !default;
+$black: #000 !default;
+$text-color: #333 !default;
+$bg-nothumb: #ffffff !default;
+$icon-gray: #dadada !default;
+
+// gray
+$gray-10: #F8F8FA !default;
+$gray-50: #F3F4F6 !default;
+$gray-100: #E8EAEE !default;
+$gray-200: #E2E4EC !default;
+$gray-300: #D6D8E0 !default;
+$gray-400: #BEC0C8 !default;
+$gray-500: #8E9098 !default;
+$gray-600: #767880 !default;
+$gray-700: #5E6068 !default;
+$gray-800: #464850 !default;
+$gray-900: #2E3038 !default;
+
+// Primary
+$primary-10: #FFF5F3 !default;
+$primary-50: #FFECE9 !default;
+$primary-100: #FFBBB7 !default;
+$primary-200: #FF938F !default;
+$primary-300: #FF6B67 !default;
+$primary-400: #FF5753 !default;
+$primary-500: #E53935 !default;
+$primary-600: #CA332F !default;
+$primary-700: #A62A27 !default;
+$primary-800: #932522 !default;
+$primary-900: #6E1C1A !default;
+
+// blue
+$blue-50: #E8F0FC !default;
+$blue-100: #C8DAFD !default;
+$blue-200: #A9C5FC !default;
+$blue-300: #86ADFB !default;
+$blue-400: #6E9DFA !default;
+$blue-500: #528AF8 !default;
+$blue-600: #497ADA !default;
+$blue-700: #3C64B3 !default;
+$blue-800: #35599F !default;
+$blue-900: #284377 !default;
+
+// orange
+$orange-50: #FFF0E3;
+$orange-100: #FFD2C5;
+$orange-200: #FEB8A5;
+$orange-300: #FE9C80;
+$orange-400: #FE8868;
+$orange-500: #FC704B;
+$orange-600: #DF6442;
+$orange-700: #B75236;
+$orange-800: #A24930;
+$orange-900: #7A3724;
+
+// green
+$green-50: #DCF8E6;
+$green-100: #B7EBC9;
+$green-200: #8EDFAA;
+$green-300: #60D288;
+$green-400: #41C971;
+$green-500: #1CBE55;
+$green-600: #19A74B;
+$green-700: #158A3E;
+$green-800: #127A37;
+$green-900: #0E5B29;
+
+
+
+$grays: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$grays: map-merge(("100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900),
+  $grays);
+
+$blue: #497ADA !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #E53935 !default;
+$orange: #FC704B !default;
+$yellow: #ffc107 !default;
+$green: $green-500 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
+
+$colors: () !default;
+// bgcolor
+// stylelint-disable-next-line scss/dollar-variable-default
+$colors: map-merge(("blue": $blue,
+    "black": $black,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "nothumb": $bg-nothumb,
+    "icon-gray": $icon-gray,
+    "gray": $gray-500,
+    "gray-10": $gray-10,
+    "gray-50": $gray-50,
+    "gray-100": $gray-100,
+    "gray-200": $gray-200,
+    "gray-300": $gray-300,
+    "gray-400": $gray-400,
+    "gray-700": $gray-700,
+    "gray-900": $gray-900,
+    "blue-50": $blue-50,
+    "blue-600": $blue-600,
+    "blue-700": $blue-700,
+    "green-500": $green-500,
+    "green-600": $green-600,
+    "orange-50": $orange-50,
+    "orange-100": $orange-100,
+    "orange-500": $orange-500,
+    "orange-600": $orange-600,
+    "orange-700": $orange-700,
+    "orange-800": $orange-800,
+    "primary-10": $primary-10,
+    "primary-50": $primary-50,
+    "primary-100": $primary-100,
+    "primary-600": $primary-600,
+    "green-50": $green-50,
+    "green-700": $green-700),
+  $colors);
+
+$primary: $red !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $blue !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-10 !default;
+$dark: $text-color !default;
+$gray: $gray-500 !default;
+
+$theme-colors: () !default;
+// textcolor
+// stylelint-disable-next-line scss/dollar-variable-default
+$theme-colors: map-merge(("primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "orange": $orange,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "white": $white,
+    "dark": $dark,
+    "black": $black,
+    "nothumb": $bg-nothumb,
+    "icon-gray": $icon-gray,
+    "gray": $gray,
+    "gray-10": $gray-10,
+    "gray-50": $gray-50,
+    "gray-100": $gray-100,
+    "gray-200": $gray-200,
+    "gray-300": $gray-300,
+    "gray-400": $gray-400,
+    "gray-700": $gray-700,
+    "gray-900": $gray-900,
+    "blue": $blue-600,
+    "blue-50": $blue-50,
+    "blue-600": $blue-600,
+    "blue-700": $blue-700,
+    "green-500": $green-500,
+    "green-600": $green-600,
+    "orange-50": $orange-50,
+    "orange-100": $orange-100,
+    "orange-500": $orange-500,
+    "orange-600": $orange-600,
+    "orange-700": $orange-700,
+    "orange-800": $orange-800,
+    "primary-10": $primary-10,
+    "primary-50": $primary-50,
+    "primary-100": $primary-100,
+    "primary-600": $primary-600,
+    "green-50": $green-50),
+  $theme-colors);
+
+// Set a specific jump point for requesting color jumps
+$theme-color-interval: 8% !default;
+
+// The yiq lightness value that determines when the lightness of color changes from "dark" to "light". Acceptable values are between 0 and 255.
+$yiq-contrasted-threshold: 150 !default;
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark: $gray-900 !default;
+$yiq-text-light: $white !default;
+
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret: true !default;
+$enable-rounded: true !default;
+$enable-shadows: false !default;
+$enable-gradients: false !default;
+$enable-transitions: true !default;
+$enable-prefers-reduced-motion-media-query: true !default;
+$enable-hover-media-query: false !default; // Deprecated, no longer affects any compiled CSS
+$enable-grid-classes: true !default;
+$enable-pointer-cursor-for-buttons: true !default;
+$enable-print-styles: true !default;
+$enable-responsive-font-sizes: false !default;
+$enable-validation-icons: true !default;
+$enable-deprecation-messages: true !default;
+
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+$spacer: 1px;
+$spacers: ();
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge((0: 0,
+    1: ($spacer * 1),
+    2: ($spacer * 2),
+    3: $spacer * 3,
+    4: ($spacer * 4),
+    5: ($spacer * 5),
+    6: ($spacer * 6),
+    7: ($spacer * 7),
+    8: ($spacer * 8),
+    9: ($spacer * 9),
+    10: ($spacer * 10),
+    11: ($spacer * 11),
+    12: ($spacer * 12),
+    13: ($spacer * 13),
+    14: ($spacer * 14),
+    15: ($spacer * 15),
+    16: ($spacer * 16),
+    18: ($spacer * 18),
+    20: ($spacer * 20),
+    21: ($spacer * 21),
+    23: ($spacer * 23),
+    24: ($spacer * 24),
+    26: ($spacer * 26),
+    28: ($spacer * 28),
+    30: ($spacer * 30),
+    32: ($spacer * 32),
+    40: ($spacer * 40),
+    42: ($spacer * 42),
+    50: ($spacer * 50),
+    56: ($spacer * 56),
+    58: ($spacer * 58),
+    60: ($spacer * 60),
+    64: ($spacer * 64),
+    72: ($spacer * 72),
+    80: ($spacer * 80),
+    96: ($spacer * 96),
+    100: ($spacer * 100),
+    112: ($spacer * 112),
+    120: ($spacer * 120),
+    136: ($spacer * 136),
+    48: ($spacer * 48)),
+  $spacers);
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$sizes: map-merge((25: 25%,
+    50: 50%,
+    75: 75%,
+    100: 100%,
+    auto: auto),
+  $sizes);
+
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $gray-50 !default;
+$body-color: $text-color !default;
+
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: $gray-800 !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 15%) !default;
+$link-hover-decoration: underline !default;
+// Darken percentage for links with `.text-*` class (e.g. `.text-success`)
+$emphasized-link-hover-darken-percentage: 15% !default;
+
+// Paragraphs
+//
+// Style p element.
+
+$paragraph-margin-bottom: 1rem !default;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px) !default;
