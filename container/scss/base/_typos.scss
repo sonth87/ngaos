@@ -568,6 +568,18 @@
   -webkit-line-clamp: 3;
 }
 
+.text-truncate-4 {
+  word-wrap: break-word;
+  white-space: normal;
+  line-height: 20px;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  /*! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+
 
 .text-error {
   color: #e53935;

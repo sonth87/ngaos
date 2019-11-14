@@ -29,11 +29,11 @@
     <script src="node_modules/slick-carousel/slick/slick.min.js"></script>
 </head>
 
-<body class="landing-page">
+<body>
     <!-- Header -->
     <section class="st-header">
         <div class="header d-flex flex-center">
-            <div class="container d-flex">
+            <div class="container d-flex flex-center px-64">
                 <div class="hamberger">
                     <i class="fas fa-bars"></i>
                 </div>
@@ -58,14 +58,14 @@
         <div class="menu">
             <div class="container h-100">
                 <ul class="menu-bar d-flex flex-center h-100">
-                    <li>Tất cả sản phẩm</li>
-                    <li>Sale</li>
-                    <li>Lookbook</li>
-                    <li>balo to</li>
-                    <li>balo bé</li>
-                    <li>Túi chéo</li>
-                    <li>Ví</li>
-                    <li>Phụ Kiện túi</li>
+                    <li><a href="#">Tất cả sản phẩm</a></li>
+                    <li><a href="#">Sale</a></li>
+                    <li><a href="#">Lookbook</a></li>
+                    <li><a href="#">balo to</a></li>
+                    <li><a href="#">balo bé</a></li>
+                    <li><a href="#">Túi chéo</a></li>
+                    <li><a href="#">Ví</a></li>
+                    <li><a href="#">Phụ Kiện túi</a></li>
                 </ul>
             </div>
         </div>
@@ -78,7 +78,7 @@
                         <img src="dist/img/Image 10.png" />
                     </div>
                     <div>
-                        <h3>2</h3>
+                        <img src="dist/img/Image 10.png" />
                     </div>
                 </div>
             </div>
@@ -89,14 +89,21 @@
     <!-- Body -->
     <section class="st-body">
         <div class="container">
-            <div class="block-1 row mt-100">
+            <div class="block-1 d-flex bg-white">
                 <div class="col-12 col-md-6 d-flex flex-end_center">
-                    <img src="dist/img/Image 35.png">
+                    <div class="px-12 position-relative">
+                        <div class="pic-1 mhx-500">
+                            <img src="dist/img/Image 35.png">
+                        </div>
+                        <div class="pic-2 w-270 h-270 position-absolute l-0">
+                            <img src="dist/img/Image 34.png" class=" ">
+                        </div>
+                    </div>
                 </div>
                 <div class="col-12 col-md-6 d-flex flex-start_center">
-                    <div class="intro d-flex flex-column pr-24">
+                    <div class="intro d-flex flex-column pr-48 pl-64">
                         <div class="heading">Câu chuyện của NGAOS</div>
-                        <div class="content mt-20 wx-70">
+                        <div class="content mt-20 wx-70 text-truncate-4 intro-text">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum eros odio, quis
                             volutpat nisl mattis a. Fusce rhoncus turpis eget sem congue volutpat. Aenean sit amet
                             volutpat arcu. Phasellus tristique malesuada lectus. Phasellus vitae turpis neque. Sed
@@ -106,6 +113,115 @@
                             neque rhoncus, condimentum tellus vel, tincidunt diam.
                         </div>
                         <button class="st-btn mt-40">XEM THÊM</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-2 d-flex bg-white">
+                <div class="col-12 col-md-6 d-flex flex-end_center left">
+                    <div class="wx-100 text-center py-100">
+                        <div class="heading mb-24">Sản phẩm nổi bật</div>
+                        <div class="slider">
+                            <div>
+                                <img src="dist/img/Image 44.png" />
+                                <div class="p-name">Lorem ipsum dolor amet sit</div>
+                            </div>
+                            <div>
+                                <img src="dist/img/Image 44.png" />
+                                <div class="p-name">Lorem ipsum dolor amet sit</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 d-flex flex-end_center right"
+                    style='background-image: url("dist/img/Image 43.png")'>
+                </div>
+            </div>
+
+            <div class="block-3 bg-white">
+                <div class="pt-150 pb-100 wx-100 d-flex flex-column flex-center">
+                    <div class="heading mb-28">Hàng mới về</div>
+
+                    <div class="product-slide wx-100 px-60">
+                        <div class="slider">
+                            <div class="product-item px-15">
+                                <div class="p-image">
+                                    <div class="p-stopper-sale">SALE</div>
+                                    <img src="dist/img/Image 127.png" />
+                                    <div class="p-func">
+                                        <button class="st-btn buy-now-btn">MUA NGAY</button>
+                                        <div class="favo-btn"><img src="dist/img/flower.svg" class="mw-100 mh-100" /></div>
+                                    </div>
+                                </div>
+                                <div class="p-desction d-flex flex-center flex-column">
+                                    <div class="p-name">Robot limited edtion</div>
+                                    <div class="p-price">
+                                        <div class="price-u">700.000 VNĐ</div>
+                                        <div class="price-o">500.000 VNĐ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item px-15">
+                                <div class="p-image">
+                                    <img src="dist/img/Image 127.png" />
+                                    <div class="p-func">
+                                        <button class="st-btn buy-now-btn">MUA NGAY</button>
+                                        <div class="favo-btn"><img src="dist/img/flower.svg" class="mw-100 mh-100" /></div>
+                                    </div>
+                                </div>
+                                <div class="p-desction d-flex flex-center flex-column">
+                                    <div class="p-name">Robot limited edtion</div>
+                                    <div class="p-price">
+                                        <div class="price-o">500.000 VNĐ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item px-15">
+                                <div class="p-image">
+                                    <img src="dist/img/Image 127.png" />
+                                    <div class="p-func">
+                                        <button class="st-btn buy-now-btn">MUA NGAY</button>
+                                        <div class="favo-btn"><img src="dist/img/flower.svg" class="mw-100 mh-100" /></div>
+                                    </div>
+                                </div>
+                                <div class="p-desction d-flex flex-center flex-column">
+                                    <div class="p-name">Robot limited edtion</div>
+                                    <div class="p-price">
+                                        <div class="price-o">500.000 VNĐ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item px-15">
+                                <div class="p-image">
+                                    <img src="dist/img/Image 127.png" />
+                                    <div class="p-func">
+                                        <button class="st-btn buy-now-btn">MUA NGAY</button>
+                                        <div class="favo-btn"><img src="dist/img/flower.svg" class="mw-100 mh-100" /></div>
+                                    </div>
+                                </div>
+                                <div class="p-desction d-flex flex-center flex-column">
+                                    <div class="p-name">Robot limited edtion</div>
+                                    <div class="p-price">
+                                        <div class="price-o">500.000 VNĐ</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-item px-15">
+                                <div class="p-image">
+                                    <img src="dist/img/Image 127.png" />
+                                    <div class="p-func">
+                                        <button class="st-btn buy-now-btn">MUA NGAY</button>
+                                        <div class="favo-btn"><img src="dist/img/flower.svg" class="mw-100 mh-100" /></div>
+                                    </div>
+                                </div>
+                                <div class="p-desction d-flex flex-center flex-column">
+                                    <div class="p-name">Robot limited edtion</div>
+                                    <div class="p-price">
+                                        <div class="price-o">500.000 VNĐ</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

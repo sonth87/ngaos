@@ -4,18 +4,27 @@
  * ============================================================================
  */
 
- @import './base/_colors.scss';
- @import './base/_fonts.scss';
- @import './base/_variable.scss';
- @import './base/_reset.scss';
- @import './base/_opacity.scss';
- @import './base/_typos.scss';
- @import './base/_position.scss';
- @import './base/_flex.scss';
- @import './base/_padding.scss';
- @import './base/_margin.scss';
- @import './base/_size.scss';
- @import './base/_z-index.scss';
+ @import './base/colors';
+ @import './base/fonts';
+ @import './base/variable';
+ @import './base/reset';
+ @import './base/opacity';
+ @import './base/typos';
+ @import './base/position';
+ @import './base/flex';
+ @import './base/padding';
+ @import './base/margin';
+ @import './base/size';
+ @import './base/z-index';
+
+
+ /*
+ * ============================================================================
+ * DEFAULT
+ * ============================================================================
+ */
+
+ @import './default';
 
 
  /*

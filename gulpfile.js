@@ -27,12 +27,12 @@ gulp.task('sass', function () {
 });
 
 gulp.task('fonts', function(){
-   return gulp.src(['container/font/*'])
+   return gulp.src(['container/font/**/*'])
        .pipe(gulp.dest('dist/font'));
 });
 
 gulp.task('images', function () {
-    return gulp.src('container/image/*')
+    return gulp.src('container/image/**/*')
         .pipe(gulp.dest('dist/img'))
         .pipe(livereload());
 });

@@ -131,37 +131,81 @@
   font-style: normal;
 }
 
+/** Playfair */
 @font-face {
   font-family: 'Playfair';
-  src: url('../font/PlayfairDisplay-Regular.ttf') format('truetype');
-  font-weight: 400;
+  src: url('../font/Playfair_Display/PlayfairDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Playfair';
-  src: url('../font/PlayfairDisplay-Bold.ttf') format('truetype');
+  src: url('../font/Playfair_Display/PlayfairDisplay-Bold.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Playfair';
-  src: url('../font/PlayfairDisplay-Black.ttf') format('truetype');
+  src: url('../font/Playfair_Display/PlayfairDisplay-Black.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Playfair';
-  src: url('../font/PlayfairDisplay-Italic.ttf') format('truetype');
-  font-weight: 400;
+  src: url('../font/Playfair_Display/PlayfairDisplay-Italic.ttf') format('truetype');
+  font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Playfair';
-  src: url('../font/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+  src: url('../font/Playfair_Display/PlayfairDisplay-BoldItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+/** Cabin */
+@font-face {
+  font-family: 'Cabin';
+  src: url('../font/Cabin/Cabin-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url('../font/Cabin/Cabin-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url('../font/Cabin/Cabin-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url('../font/Cabin/Cabin-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url('../font/Cabin/Cabin-Italic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Cabin';
+  src: url('../font/Cabin/Cabin-BoldItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
