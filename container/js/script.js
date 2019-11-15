@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    $('.sub-menu .hamberger').on('click', function() {
+        $(this).closest('.sub-menu').toggleClass('open');
+    });
+
     $(".slide-banner").slick({
         slidesToShow: 1,
         slidesToScroll: 1,

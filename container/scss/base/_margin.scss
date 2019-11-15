@@ -1,18 +1,30 @@
 @for $i from 1 through 100 {
     .mx-#{$i},
     .ml-#{$i} {
-        margin-left: #{$i}px;
+        margin-left: #{$i}px !important;
     }
     .mx-#{$i},
     .mr-#{$i} {
-        margin-right: #{$i}px;
+        margin-right: #{$i}px !important;
     }
     .my-#{$i},
     .mt-#{$i} {
-        margin-top: #{$i}px;
+        margin-top: #{$i}px !important;
     }
     .my-#{$i},
     .mb-#{$i} {
-        margin-bottom: #{$i}px;
+        margin-bottom: #{$i}px !important;
+    }
+    .ml-n#{$i} {
+        margin-left: -#{$i}px !important;
+    }
+    .ml-r#{$i} {
+        margin-right: -#{$i}px !important;
+    }
+    .ml-t#{$i} {
+        margin-top: -#{$i}px !important;
+    }
+    .ml-b#{$i} {
+        margin-bottom: -#{$i}px !important;
     }
 }

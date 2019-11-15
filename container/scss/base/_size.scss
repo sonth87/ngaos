@@ -14,4 +14,10 @@
     .mhx-#{$i} {
         max-height: #{$i}px;
     }
+    .miwx-#{$i} {
+        min-width: #{$i}px;
+    }
+    .mihx-#{$i} {
+        min-height: #{$i}px;
+    }
 }
