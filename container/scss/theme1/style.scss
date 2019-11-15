@@ -69,6 +69,7 @@ body {
             font-family: Playfair, Roboto;
             position: absolute;
             left: 50%;
+            transform: translateX(-50%);
         }
 
         &-function {
