@@ -1,0 +1,169 @@
+.st-body {
+    .product-list-action {
+        .filter-header {
+            display: none;
+            font-size: 12px;
+            line-height: 15px;
+            color: #aaaaaa;
+            text-transform: uppercase;
+            transition: 0.5s;
+            user-select: none;
+            padding: 0 20px;
+
+            i.zmdi {
+                transition: 0.3s;
+            }
+        }
+        .product-filter,
+        .product-sort {
+            .label,
+            .selected-option {
+                font-size: 12px;
+                line-height: 15px;
+                color: #aaaaaa;
+                text-transform: uppercase;
+                transition: 0.5s;
+                user-select: none;
+
+                &:hover {
+                    color: #333;
+                }
+            }
+            .selected-option {
+                margin-left: 5px;
+            }
+            .color-list-item {
+                max-width: 15px;
+                max-height: 15px;
+                min-width: 15px;
+                min-height: 15px;
+                padding: 0 !important;
+                border: solid 1px #aaa;
+                border-radius: 50%;
+            }
+            .selection-list {
+                font-size: 12px;
+                line-height: 15px;
+                color: #aaaaaa;
+                li {
+                    margin-bottom: 8px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    &:hover {
+                        color: #333;
+                    }
+                }
+            }
+            i.zmdi {
+                font-size: 18px;
+                // position: relative;
+                // z-index: 2;
+            }
+            .selection-color,
+            .selection-price,
+            .selection-sort {
+                display: none;
+                position: absolute;
+                top: 0;
+                left: 0;
+                min-width: 100%;
+            }
+        }
+
+        .filter-color,
+        .filter-price,
+        .product-sort {
+            cursor: pointer;
+            position: relative;
+
+            &.open {
+                .selection-color,
+                .selection-price,
+                .selection-sort {
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    background: #fff;
+                    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+                    border-radius: 4px;
+                    padding: 6px 24px 6px 12px;
+                    white-space: nowrap;
+                    left: -12px;
+                    top: -6px;
+                }
+                i.zmdi {
+                    // transform: rotate(180deg);
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .filter-header {
+                display: block;
+                padding: 20px;
+                &.open {
+                    i.zmdi {
+                        position: relative;
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+            .product-filter {
+                width: 100%;
+            }
+            .filter-color,
+            .filter-price,
+            .product-sort {
+                width: 100%;
+                padding: 20px;
+                border-top: solid 1px $color-2;
+                margin: 0 !important;
+                .zmdi.label {
+                    display: none;
+                }
+                & > .label,
+                & > .selected-option {
+                    display: none !important;
+                }
+                .selection-color,
+                .selection-price,
+                .selection-sort {
+                    display: block !important;
+                    position: relative;
+                    box-shadow: none !important;
+                    .selection-list {
+                        & > ul {
+                            margin-left: 0 !important;
+                            margin-top: 8px;
+                            & > li {
+                                margin: 0 0 8px 0 !important;
+                                &.color-list-item {
+                                    margin-right: 13px !important;
+                                    width: 30px;
+                                    height: 30px;
+                                    max-width: 30px;
+                                    max-height: 30px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .product-list {
+        @media (max-width: 480px) {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+}

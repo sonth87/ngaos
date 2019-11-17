@@ -1,7 +1,9 @@
 @import "./form.scss";
+@import "./plp.scss";
 
 body {
     font-family: Cabin, Roboto;
+    max-width: 100%;
 }
 
 /*
@@ -14,8 +16,11 @@ body {
         width: 100%;
         @media (max-width: 480px) {
             padding: 0 20px;
-            .logo {
-                padding-left: 40px;
+            .px-64 {
+                padding: 0;
+            }
+            .sub-menu {
+                align-items: center;
             }
         }
 
@@ -82,6 +87,90 @@ body {
                 }
                 img {
                     height: 15px;
+                }
+            }
+            .mini-cart {
+                position: relative;
+                .cart-number {
+                    width: 16px;
+                    height: 16px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 10px;
+                    color: #fff;
+                    background: $color-1;
+                    border-radius: 50%;
+                    position: absolute;
+                    top: 0;
+                    right: -4px;
+                }
+            }
+        }
+    }
+
+    .sub-menu-link-mb {
+        display: none;
+        position: fixed;
+        top: 93px;
+        left: 0;
+        padding: 20px;
+        background: #fff;
+        width: 100%;
+        height: calc(100vh - 93px);
+        z-index: 9;
+
+        .search-box {
+            display: flex;
+            border-bottom: solid 1px $color-2;
+            justify-content: flex-start;
+            align-items: center;
+            .search-input {
+                width: 100%;
+                padding: 16px 16px 16px 12px;
+                &::placeholder {
+                    color: #aaa;
+                }
+            }
+            i.zmdi {
+                font-size: 22px;
+                color: #aaa;
+            }
+        }
+        #sub-menu-container {
+            margin-top: 30px;
+            .cat-header {
+                margin-left: 20px;
+                position: relative;
+                &:before {
+                    content: '';
+                    width: 10px;
+                    height: 10px;
+                    background: $color-2;
+                    position: absolute;
+                    left: -20px;
+                    top: 10px;
+                    border-radius: 50%;
+                }
+                .btn {
+                    font-size: 25px;
+                    line-height: 30px;
+                    color: #666;
+                    margin-bottom: 15px;
+                    padding: 0;
+                    &:not(.collapsed) {
+                        text-decoration:  none;
+                        color: $color-1;
+                    }
+                }
+            }
+            .cat-body {
+                font-size: 16px;
+                line-height: 19px;
+                color: #666;
+                margin-left: 20px;
+                .sub-menu-child {
+                    margin-bottom: 18px;
                 }
             }
         }
@@ -215,23 +304,21 @@ body {
             }
         }
     }
+}
 
-    .product-filter, .product-sort {
-        .selected-color-list {
-            .color-list-item {
-                max-width: 15px;
-                max-height: 15px;
-                min-width: 15px;
-                min-height: 15px;
-                padding: 0 !important;
-                border: solid 1px #aaa;
-                border-radius: 50%;
+.st-footer {
+    .footer-top {
+        .footer-content {
+            @media (max-width: 480px) {
+                padding: 10px 20px 40px;
+                flex-direction: column;
+                .title {
+                    margin-top: 30px;
+                }
+                .send-mail-btn {
+                    max-width: 50px;
+                }
             }
-        }
-        .label {
-            font-size: 12px;
-            line-height: 15px;
-            color: #aaaaaa;
         }
     }
 }
@@ -242,6 +329,17 @@ body.fixed-header {
         top: 0;
         z-index: 10;
         background: rgba(255, 255, 255, 0.9);
+    }
+}
+
+body.menu-open {
+    @media (max-width: 480px) {
+        overflow: hidden;
+        position: fixed;
+        max-width: 100%;
+        .sub-menu-link-mb {
+            display: block;
+        }
     }
 }
 
@@ -399,7 +497,6 @@ body.fixed-header {
     }
 
     @media (max-width: 480px) {
-        padding: 0 5px;
         min-width: 160px;
         .p-image {
             height: 215px;

@@ -1,6 +1,9 @@
 $(document).ready(function() {
-    $('.sub-menu .hamberger').on('click', function() {
-        $(this).closest('.sub-menu').toggleClass('open');
+    $(".sub-menu .hamberger").on("click", function() {
+        $(this)
+            .closest(".sub-menu")
+            .toggleClass("open");
+        $("body").toggleClass("menu-open");
     });
 
     $(".slide-banner").slick({
@@ -50,13 +53,37 @@ $(document).ready(function() {
                 breakpoint: 480,
                 settings: {
                     slidesToShow: 2,
-                    slidesToScroll: 2,
+                    slidesToScroll: 2
                     // arrows: false,
                     // slidesPerRow: 2,
                     // rows: 2,
                 }
             }
         ]
+    });
+
+    $(".filter-color, .filter-price, .product-sort").on("click", function(e) {
+        e.stopPropagation();
+        $(".product-list-action .open").removeClass("open");
+        $(this).toggleClass("open");
+    });
+
+    $(".product-list-action .selection-list .item").on("click", function(e) {
+        e.stopPropagation();
+
+        // selection item action
+        alert("selected : " + $(this).attr("data-value"));
+
+        $(".product-list-action .open").removeClass("open");
+    });
+
+    $(document).on("click", function() {
+        $(".filter-color, .filter-price, .product-sort").removeClass("open");
+    });
+
+    $(".product-list-action .filter-header").on("click", function() {
+        $(".product-sort, .product-filter").toggleClass("d-none");
+        $(this).toggleClass("open");
     });
 
     $(document).scroll(function(e) {
