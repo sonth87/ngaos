@@ -1,6 +1,11 @@
 @import "./form.scss";
 @import "./plp.scss";
+@import "./pdp.scss";
 
+
+html, body {
+    overflow-x: hidden;
+}
 body {
     font-family: Cabin, Roboto;
     max-width: 100%;

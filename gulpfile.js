@@ -6,6 +6,7 @@ var rename = require('gulp-rename');
 var minifyCss = require('gulp-cssnano');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var pug = require('gulp-pug');
 
 gulp.task('sass', function () {
     return gulp.src('container/scss/theme.scss')
@@ -20,7 +21,7 @@ gulp.task('sass', function () {
 });
 
  gulp.task('scripts', function(){
-    return gulp.src(['container/js/script.js'])
+    return gulp.src(['container/js/*.js'])
         .pipe(concat('script.js'))
         .pipe(uglify())
         .pipe(gulp.dest('dist/js'));
@@ -37,6 +38,14 @@ gulp.task('images', function () {
         .pipe(livereload());
 });
 
+gulp.task('views', function buildHTML() {
+  return gulp.src('views/*.pug')
+  .pipe(pug({
+    // Your options in here.
+  }))
+  .pipe(gulp.dest('build'))
+});
+
 gulp.task('browserSync', function() {
     browserSync.init({
       server: {
@@ -50,6 +59,7 @@ gulp.task('watch', function() {
     gulp.watch('container/js/**/*', gulp.series('scripts'));
     gulp.watch('container/font/**/*', gulp.series('fonts'));
     gulp.watch('container/image/**/*', gulp.series('images'));
+    gulp.watch('container/views/*', gulp.series('views'));
   });
 
 // Default Task

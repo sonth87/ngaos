@@ -41,26 +41,25 @@ $(document).ready(function() {
         arrows: true
     });
 
-    $(".block-3 .slider").slick({
-        slidesToShow: 4,
-        slidesToScroll: 4,
-        arrows: false,
-        infinite: false,
-        dots: true,
-
-        responsive: [
-            {
-                breakpoint: 480,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2
-                    // arrows: false,
-                    // slidesPerRow: 2,
-                    // rows: 2,
-                }
-            }
-        ]
-    });
+    if ($(document).width() <= 480) {
+        $(".block-3 .slider").slick({
+            rows: 2,
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            arrows: false,
+            infinite: false,
+            dots: true
+        });
+    } else {
+        $(".block-3 .slider").slick({
+            rows: 1,
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            arrows: false,
+            infinite: false,
+            dots: true
+        });
+    }
 
     $(".filter-color, .filter-price, .product-sort").on("click", function(e) {
         e.stopPropagation();
@@ -86,6 +85,7 @@ $(document).ready(function() {
         $(this).toggleClass("open");
     });
 
+    // Header
     $(document).scroll(function(e) {
         var scroll = $(document).scrollTop();
         var min_height = 50,
@@ -100,11 +100,30 @@ $(document).ready(function() {
                 height:
                     scroll == 0 && $(".header").height() > min_height
                         ? height - scroll / 5
-                        : min_height
+                        : min_height,
+                "box-shadow": "0px 0px 5px 0px rgba(0, 0, 0, 0.2)"
             });
         } else {
             $("body").removeClass("fixed-header");
             $("body, .header").removeAttr("style");
         }
     });
+
+    if ($(document).width() <= 480) {
+        $(".product-detail-img-list").slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: true,
+            autoplay: true,
+            autoplaySpeed: 15000,
+            arrows: true
+        });
+    } else {
+        $(".product-detail-content").scrollToFixed({
+            limit:
+                $(".product-description-container").offset().top -
+                $(".product-detail-content").outerHeight(true) -
+                10
+        });
+    }
 });

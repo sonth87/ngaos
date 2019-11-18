@@ -1,0 +1,116 @@
+.st-body {
+    .product-detail-img-list {
+        img {
+            margin-right: 0;
+            margin-bottom: 54px;
+        }
+    }
+
+    .product-detail-content {
+        margin-top: 100px;
+        padding: 0 50px 0 100px;
+        position: relative;
+
+        @media (max-width: 480px) {
+            margin-top: 50px;
+            padding: 0 8px 30px 8px;
+        }
+
+        .product-name {
+            font-size: 40px;
+            line-height: 53px;
+            font-family: Playfair, Roboto;
+
+            @media (max-width: 480px) {
+                font-size: 28px;
+                line-height: 37px;
+            }
+        }
+        .product-price {
+            font-size: 20px;
+            line-height: 24px;
+            margin-top: 15px;
+            color: #333;
+        }
+        .product-short-desc {
+            font-size: 16px;
+            line-height: 30px;
+            margin-top: 50px;
+            color: #666;
+
+            @media (max-width: 480px) {
+                margin-top: 30px;
+            }
+        }
+        .product-varial {
+            margin-top: 15px;
+
+            .color-list-item {
+                max-width: 15px;
+                max-height: 15px;
+                min-width: 15px;
+                min-height: 15px;
+                padding: 0 !important;
+                border: solid 1px #aaa;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        .product-description-container {
+            padding-top: 30px;
+        }
+    }
+    .product-description {
+        padding-left: 100px;
+        .desc-title {
+            font-size: 25px;
+            line-height: 33px;
+            font-family: Playfair, Roboto;
+            font-style: italic;
+            font-weight: normal;
+            margin-bottom: 35px;
+        }
+        .desc-full,
+        .product-spec {
+            font-size: 16px;
+            line-height: 30px;
+            color: #666;
+        }
+        .product-spec {
+            list-style: none;
+            padding-left: 100px;
+
+            li {
+                position: relative;
+                &::before {
+                    content: "\2022";
+                    color: $color-2;
+                    display: inline-block;
+                    font-size: 40px;
+                    line-height: 1px;
+                    position: absolute;
+                    font-size: 35px;
+                    top: 12px;
+                    left: -25px;
+                }
+            }
+        }
+
+        @media (max-width: 480px) {
+            padding: 0 8px;
+
+            .desc-title {
+                font-size: 20px;
+                line-height: 27px;
+                margin-bottom: 20px;
+            }
+            .product-spec {
+                list-style: none;
+                padding-left: 20px;
+                padding-top: 40px;
+            }
+        }
+    }
+}
