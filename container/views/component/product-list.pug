@@ -1,0 +1,180 @@
+// Body
+section.st-body
+  .container
+    .wx-100.bg-white.pb-50
+      .w-100.cat-title.pt-30.pb-30.d-flex.flex-center.flex-column
+        .heading Balo To
+        .breadcrum.mt-10 Trang chủ / Sản phẩm / Balo to
+      // Product filter
+      .product-list-action.w-100.d-flex.flex-between.border-top.border-bottom.py-20.px-60
+        .filter-header
+          | Bộ lọc
+          i.zmdi.zmdi-chevron-down.ml-5.label
+        .product-filter.d-none.d-sm-flex
+          .filter-color.text-upper.d-flex.flex-start_center
+            .label Màu sắc:
+            ul.selected-option.d-flex.ml-10
+              li.color-list-item.mx-4(style='background: #fff')
+              li.color-list-item.mx-4(style='background: #EBC7C7')
+              li.color-list-item.mx-4(style='background: #BA6373')
+              li.color-list-item.mx-4(style='background: #000000')
+            i.zmdi.zmdi-chevron-down.ml-5.label
+            .selection-color
+              .label Màu sắc:
+              .selection-list
+                ul.item.d-flex.ml-10(data-value='1')
+                  li.color-list-item.mx-4(style='background: #fff')
+                  li.color-list-item.mx-4(style='background: #EBC7C7')
+                  li.color-list-item.mx-4(style='background: #BA6373')
+                  li.color-list-item.mx-4(style='background: #000000')
+                ul.item.d-flex.ml-10(data-value='2')
+                  li.color-list-item.mx-4(style='background: #fff')
+                  li.color-list-item.mx-4(style='background: #EBC7C7')
+                  li.color-list-item.mx-4(style='background: #BA6373')
+                  li.color-list-item.mx-4(style='background: #000000')
+                ul.item.d-flex.ml-10(data-value='3')
+                  li.color-list-item.mx-4(style='background: #fff')
+                  li.color-list-item.mx-4(style='background: #EBC7C7')
+                  li.color-list-item.mx-4(style='background: #BA6373')
+                  li.color-list-item.mx-4(style='background: #000000')
+          .filter-price.text-upper.ml-30.d-flex.flex-start_center
+            .label giá:
+            .selected-option 0 - 500.000 VNĐ
+            i.zmdi.zmdi-chevron-down.ml-5.label
+            .selection-price
+              .label giá:
+              .selection-list
+                ul.ml-10
+                  li.item.mx-4(data-value='< 500k>') 0 - 500.000 VNĐ
+                  li.item.mx-4(data-value='500k - 1m') 500.000 VNĐ - 1.000.000 VNĐ
+                  li.item.mx-4(data-value='> 1m') > 1.000.000 VNĐ
+        .product-sort.d-none.d-sm-flex
+          .sort-label.label Sắp xếp:
+          .selected-option Giá từ cao đến thấp
+          i.zmdi.zmdi-chevron-down.ml-5.label
+          .selection-sort
+            .sort-label.label Sắp xếp:
+            .selection-list
+              ul.ml-10
+                li.item.mx-4(data-value='cao đến thấp') GÍA TỪ CAO ĐẾN THẤP
+                li.item.mx-4(data-value='thấp đến cao') GÍA TỪ THẤP ĐẾN CAO
+                li.item.mx-4(data-value='newest') HÀNG MỚI NHẤT
+      // End Product filter
+      // Product list
+      .product-list.w-100.d-flex.flex-wrap.px-48.mt-50
+        .col-6.col-sm-4.col-md-3
+          .product-item
+            .p-image
+              .p-stopper-sale SALE
+              img(src='dist/img/Image 127.png')
+              .p-func
+                button.st-btn.buy-now-btn MUA NGAY
+                .favo-btn
+                  img.mw-100.mh-100(src='dist/img/flower.svg')
+            .p-desction.d-flex.flex-center.flex-column
+              .p-name Robot limited edtion
+              .p-price
+                .price-u 700.000 VNĐ
+                .price-o 500.000 VNĐ
+        .col-6.col-sm-4.col-md-3
+          .product-item
+            .p-image
+              .p-stopper-sale SALE
+              img(src='dist/img/Image 127.png')
+              .p-func
+                button.st-btn.buy-now-btn MUA NGAY
+                .favo-btn
+                  img.mw-100.mh-100(src='dist/img/flower.svg')
+            .p-desction.d-flex.flex-center.flex-column
+              .p-name Robot limited edtion
+              .p-price
+                .price-u 700.000 VNĐ
+                .price-o 500.000 VNĐ
+        .col-6.col-sm-4.col-md-3
+          .product-item
+            .p-image
+              .p-stopper-sale SALE
+              img(src='dist/img/Image 127.png')
+              .p-func
+                button.st-btn.buy-now-btn MUA NGAY
+                .favo-btn
+                  img.mw-100.mh-100(src='dist/img/flower.svg')
+            .p-desction.d-flex.flex-center.flex-column
+              .p-name Robot limited edtion
+              .p-price
+                .price-u 700.000 VNĐ
+                .price-o 500.000 VNĐ
+        .col-6.col-sm-4.col-md-3
+          .product-item
+            .p-image
+              .p-stopper-sale SALE
+              img(src='dist/img/Image 127.png')
+              .p-func
+                button.st-btn.buy-now-btn MUA NGAY
+                .favo-btn
+                  img.mw-100.mh-100(src='dist/img/flower.svg')
+            .p-desction.d-flex.flex-center.flex-column
+              .p-name Robot limited edtion
+              .p-price
+                .price-u 700.000 VNĐ
+                .price-o 500.000 VNĐ
+        .col-6.col-sm-4.col-md-3
+          .product-item
+            .p-image
+              .p-stopper-sale SALE
+              img(src='dist/img/Image 127.png')
+              .p-func
+                button.st-btn.buy-now-btn MUA NGAY
+                .favo-btn
+                  img.mw-100.mh-100(src='dist/img/flower.svg')
+            .p-desction.d-flex.flex-center.flex-column
+              .p-name Robot limited edtion
+              .p-price
+                .price-u 700.000 VNĐ
+                .price-o 500.000 VNĐ
+        .col-6.col-sm-4.col-md-3
+          .product-item
+            .p-image
+              .p-stopper-sale SALE
+              img(src='dist/img/Image 127.png')
+              .p-func
+                button.st-btn.buy-now-btn MUA NGAY
+                .favo-btn
+                  img.mw-100.mh-100(src='dist/img/flower.svg')
+            .p-desction.d-flex.flex-center.flex-column
+              .p-name Robot limited edtion
+              .p-price
+                .price-u 700.000 VNĐ
+                .price-o 500.000 VNĐ
+        .col-6.col-sm-4.col-md-3
+          .product-item
+            .p-image
+              .p-stopper-sale SALE
+              img(src='dist/img/Image 127.png')
+              .p-func
+                button.st-btn.buy-now-btn MUA NGAY
+                .favo-btn
+                  img.mw-100.mh-100(src='dist/img/flower.svg')
+            .p-desction.d-flex.flex-center.flex-column
+              .p-name Robot limited edtion
+              .p-price
+                .price-u 700.000 VNĐ
+                .price-o 500.000 VNĐ
+        .col-6.col-sm-4.col-md-3
+          .product-item
+            .p-image
+              .p-stopper-sale SALE
+              img(src='dist/img/Image 127.png')
+              .p-func
+                button.st-btn.buy-now-btn MUA NGAY
+                .favo-btn
+                  img.mw-100.mh-100(src='dist/img/flower.svg')
+            .p-desction.d-flex.flex-center.flex-column
+              .p-name Robot limited edtion
+              .p-price
+                .price-u 700.000 VNĐ
+                .price-o 500.000 VNĐ
+      // End Product list
+      .d-flex.flex-center
+        button.st-btn.px-35 XEM THÊM 40 sản phẩm
+// End Body

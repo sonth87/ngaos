@@ -2,3 +2,17 @@ $color-1: #BA6373;
 $color-2: #EBC7C7;
 $color-3: #333333;
 $color-4: #666666;
+
+.bg-primary {
+    background: $color-1 !important;
+}
+.bg-secondary {
+    background: $color-2 !important;
+}
+
+.text-primary {
+    color: $color-1 !important;
+}
+.text-secondary {
+    color: $color-2 !important;
+}

@@ -1,0 +1,39 @@
+// Body
+section.st-body
+  .container
+    .block-1.d-flex.bg-white
+      .col-12.col-md-6.d-flex.flex-end_center
+        .px-12.position-relative
+          .pic-1.mhx-500
+            img(src='dist/img/Image 35.png')
+          .pic-2.w-270.h-270.position-absolute.l-0
+            img(src='dist/img/Image 34.png')
+      .col-12.col-md-6.d-flex.flex-start_center
+        .intro.d-flex.flex-column.pr-48.pl-64
+          .heading Câu chuyện của NGAOS
+          .content.mt-20.wx-70.text-truncate-4.intro-text
+            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum eros odio, quis
+            | volutpat nisl mattis a. Fusce rhoncus turpis eget sem congue volutpat. Aenean sit amet
+            | volutpat arcu. Phasellus tristique malesuada lectus. Phasellus vitae turpis neque. Sed
+            | ultrices ipsum rhoncus, eleifend ligula bibendum, tempus elit. Donec molestie nunc ac felis
+            | ultrices, in mollis ipsum aliquam. Nulla dapibus sem sed tellus pellentesque, sed tincidunt
+            | felis efficitur. Quisque eleifend faucibus leo, id auctor enim suscipit vel. Vestibulum ut
+            | neque rhoncus, condimentum tellus vel, tincidunt diam.
+          button.st-btn.mt-40 XEM THÊM
+    .block-2.d-flex.bg-white
+      .col-12.col-md-6.d-flex.flex-end_center.left
+        .wx-100.text-center.py-100
+          .heading.mb-24 Sản phẩm nổi bật
+          .slider
+            div
+              img(src='dist/img/Image 44.png')
+              .p-name Lorem ipsum dolor amet sit
+            div
+              img(src='dist/img/Image 44.png')
+              .p-name Lorem ipsum dolor amet sit
+      .col-12.col-md-6.d-flex.flex-end_center.right(style='background-image: url("dist/img/Image 43.png")')
+    .block-3.bg-white
+      .pt-150.pb-100.wx-100.d-flex.flex-column.flex-center
+        .heading.mb-28 Hàng mới về
+        include product-slider.pug
+// End Body

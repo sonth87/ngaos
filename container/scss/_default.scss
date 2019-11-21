@@ -28,3 +28,19 @@ img {
         padding-right: 8px;
     }
 }
+
+.form-group {
+    margin-bottom: 30px;
+    > label {
+        margin-bottom: 10px;
+    }
+    input, textarea, select {
+        padding: 15px 12px 12px;
+        font-size: 14px;
+        line-height: 26px;
+        height: auto;
+        &::placeholder {
+            color: #999;
+        }
+    }
+}

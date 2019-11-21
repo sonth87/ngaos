@@ -1,0 +1,68 @@
+// Body
+section.st-body
+  .container
+    .wx-100.bg-white.pt-15.d-sm-flex
+      .col-12.col-md-6
+        .product-detail-img-list.d-sm-flex.flex-column.flex-end_start
+          img(src='dist/img/Image 35.png')
+          img(src='dist/img/Image 35.png')
+          img(src='dist/img/Image 35.png')
+          img(src='dist/img/Image 35.png')
+      .col-12.col-md-6
+        .product-detail-content.d-flex.flex-column.bg-white
+          .pd-container
+            .breadcrum Trang chủ / Sản phẩm / Balo to / Robot Limited edition
+            .product-name Robot limited edtion
+            .product-price 500.000 VNĐ
+            .product-short-desc
+              | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum eros odio, quis
+              | volutpat nisl mattis a. Fusce rhoncus turpis eget sem congue volutpat. Aenean sit amet
+              | volutpat arcu. Phasellus tristique malesuada lectus. Phasellus vitae turpis neque. Sed
+              | ultrices ipsum rhoncus, eleifend ligula bibendum, tempus elit. Donec molestie nunc ac
+              | felis
+              | ultrices, in mollis ipsum aliquam. Nulla dapibus sem sed tellus pellentesque, sed
+              | tincidunt
+              | felis efficitur. Quisque eleifend faucibus leo, id auctor enim suscipit vel. Vestibulum
+              | ut
+              | neque rhoncus, condimentum tellus vel, tincidunt diam.
+            .product-varial.text-upper.d-flex.flex-start_center
+              .label Màu sắc:
+              ul.selected-option.d-flex.ml-10
+                li.color-list-item.mx-4(style='background: #fff')
+                li.color-list-item.mx-4(style='background: #EBC7C7')
+                li.color-list-item.mx-4(style='background: #BA6373')
+                li.color-list-item.mx-4(style='background: #000000')
+    .product-description-container.wx-100.bg-white.pb-50.pt-45.pt-15.d-flex.border-top
+      .col-12
+        .product-description
+          .desc-title Thông tin sản phẩm
+          .d-sm-flex
+            .col-12.col-md-6.pr-50.pl-0
+              .desc-full
+                | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum eros odio,
+                | quis
+                | volutpat
+                | nisl mattis a. Fusce rhoncus turpis eget sem congue volutpat. Aenean sit amet
+                | volutpat arcu.
+                | Phasellus tristique malesuada lectus. Phasellus vitae turpis neque. Sed ultrices
+                | ipsum
+                | rhoncus,
+                | eleifend ligula bibendum, tempus elit. Donec molestie nunc ac felis ultrices, in
+                | mollis
+                | ipsum
+                | aliquam. Nulla dapibus sem sed tellus pellentesque, sed tincidunt felis efficitur.
+                | Quisque
+                | eleifend faucibus leo, id auctor enim suscipit vel. Vestibulum ut neque rhoncus,
+                | condimentum
+                | tellus vel, tincidunt diam.
+            .col-12.col-md-6
+              ul.product-spec
+                li font-size: 16px;
+                li line-height: 30px;
+                li margin-top: 50px;
+                li color: #666;
+    .block-3.bg-white
+      .pt-50.pb-100.wx-100.d-flex.flex-column.flex-center.border-top
+        .heading.mb-28 Có thể bạn cũng thích
+        include product-slider.pug
+// End Body

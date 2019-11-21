@@ -1,144 +1,91 @@
-
-    <!-- Header -->
-    <section class="st-header">
-        <div class="header d-flex flex-center">
-            <div class="container">
-                <div class="d-flex flex-between px-64">
-                    <div class="sub-menu d-flex">
-                        <div class="hamberger flex-center">
-                            <i class="zmdi zmdi-menu"></i>
-                            <i class="zmdi zmdi-close"></i>
-                        </div>
-                        <ul class="sub-menu-link d-none d-sm-flex ml-20">
-                            <li class="px-10"><a href="#">Liên hệ</a></li>
-                            <li class="px-10"><a href="#">Dịch vụ</a></li>
-                            <li class="px-10"><a href="#">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="logo text-center flex-1">
-                        NGAOS
-                    </div>
-                    <div class="header-function d-flex">
-                        <div class="favorite-list px-6">
-                            <img src="dist/img/flower.svg" class="mw-100 mh-100" />
-                        </div>
-                        <div class="search px-6">
-                            <img src="dist/img/magnifying-glass.svg" class="mw-100 mh-100" />
-                        </div>
-                        <div class="mini-cart px-6">
-                            <img src="dist/img/shopping-bag.svg" class="mw-100 mh-100" />
-                            <div class="cart-number">10</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Menu -->
-        <div class="menu">
-            <div class="container h-100">
-                <ul class="menu-bar d-flex flex-center h-100">
-                    <li><a href="#">Tất cả sản phẩm</a></li>
-                    <li><a href="#">Sale</a></li>
-                    <li><a href="#">Lookbook</a></li>
-                    <li><a href="#">balo to</a></li>
-                    <li><a href="#">balo bé</a></li>
-                    <li><a href="#">Túi chéo</a></li>
-                    <li><a href="#">Ví</a></li>
-                    <li><a href="#">Phụ Kiện túi</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Mobile menu -->
-        <div class="sub-menu-link sub-menu-link-mb d-sm-none">
-            <div class="search-box">
-                <i class="zmdi zmdi-search"></i>
-                <input type="text" name="search" placeholder="TÌM KIẾM"  class="search-input">
-            </div>
-
-            <div id="sub-menu-container">
-                <div class="cat">
-                    <div class="cat-header" id="heading_1">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapse_1"
-                                aria-expanded="true" aria-controls="collapse_1">
-                                Sản phẩm
-                            </button>
-                        </h5>
-                    </div>
-
-                    <div id="collapse_1" class="collapse show" aria-labelledby="heading_1"
-                        data-parent="#sub-menu-container">
-                        <div class="cat-body">
-                            <div class="sub-menu-child">Balo to</div>
-                            <div class="sub-menu-child">Balo bé</div>
-                            <div class="sub-menu-child">Túi chéo</div>
-                            <div class="sub-menu-child">Ví</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cat">
-                    <div class="cat-header" id="heading_2">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_2"
-                                aria-expanded="false" aria-controls="collapse_2">
-                                Liên hệ
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse_2" class="collapse" aria-labelledby="heading_2" data-parent="#sub-menu-container">
-                        <div class="cat-body">
-                            <div class="sub-menu-child">Balo to</div>
-                            <div class="sub-menu-child">Balo bé</div>
-                            <div class="sub-menu-child">Túi chéo</div>
-                            <div class="sub-menu-child">Ví</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cat">
-                    <div class="cat-header" id="heading_3">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_3"
-                                aria-expanded="false" aria-controls="collapse_3">
-                                Dịch vụ
-                            </button>
-                        </h5>
-                    </div>
-                    <div id="collapse_3" class="collapse" aria-labelledby="heading_3" data-parent="#sub-menu-container">
-                        <div class="cat-body">
-                            <div class="sub-menu-child">Balo to</div>
-                            <div class="sub-menu-child">Balo bé</div>
-                            <div class="sub-menu-child">Túi chéo</div>
-                            <div class="sub-menu-child">Ví</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cat">
-                    <div class="cat-header" id="heading_4">
-                        <h5 class="mb-0">
-                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse_4"
-                                aria-expanded="false" aria-controls="collapse_4">
-                                Blog
-                            </button>
-                        </h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Banner -->
-        <div class="banner">
-            <div class="container">
-                <div class="slide-banner">
-                    <div>
-                        <img src="dist/img/Image 10.png" />
-                    </div>
-                    <div>
-                        <img src="dist/img/Image 10.png" />
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- End Header -->
+// Header
+section.st-header
+  .header.d-flex.flex-center
+    .container
+      .d-flex.flex-between.px-64
+        .sub-menu.d-flex
+          .hamberger.flex-center
+            i.zmdi.zmdi-menu
+            i.zmdi.zmdi-close
+          .search.pl-12
+            img.mw-100.mh-100(src='dist/img/magnifying-glass.svg')
+          ul.sub-menu-link.d-none.d-sm-flex.ml-20
+            li.px-10
+              a(href='#') Liên hệ
+            li.px-10
+              a(href='#') Dịch vụ
+            li.px-10
+              a(href='#') Blog
+        .logo.text-center.flex-1
+          | NGAOS
+        .header-function.d-flex
+          .favorite-list.px-6
+            img.mw-100.mh-100(src='dist/img/flower.svg')
+          .account.px-6
+            i.zmdi.zmdi-account-o
+          .mini-cart.px-6
+            img.mw-100.mh-100(src='dist/img/shopping-bag.svg')
+            .cart-number 10
+  // Menu
+  .menu
+    .container.h-100
+      ul.menu-bar.d-flex.flex-center.h-100
+        li
+          a(href='#') Tất cả sản phẩm
+        li
+          a(href='#') Sale
+        li
+          a(href='#') Lookbook
+        li
+          a(href='#') balo to
+        li
+          a(href='#') balo bé
+        li
+          a(href='#') Túi chéo
+        li
+          a(href='#') Ví
+        li
+          a(href='#') Phụ Kiện túi
+  // Mobile menu
+  .sub-menu-link.sub-menu-link-mb.d-sm-none
+    .search-box
+      i.zmdi.zmdi-search
+      input.search-input(type='text', name='search', placeholder='TÌM KIẾM', ='')
+    #sub-menu-container
+      .cat
+        #heading_1.cat-header
+          h5.mb-0
+            button.btn.btn-link(data-toggle='collapse', data-target='#collapse_1', aria-expanded='true', aria-controls='collapse_1') Sản phẩm
+        #collapse_1.collapse.show(aria-labelledby='heading_1', data-parent='#sub-menu-container')
+          .cat-body
+            .sub-menu-child Balo to
+            .sub-menu-child Balo bé
+            .sub-menu-child Túi chéo
+            .sub-menu-child Ví
+      .cat
+        #heading_2.cat-header
+          h5.mb-0
+            button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapse_2', aria-expanded='false', aria-controls='collapse_2') Liên hệ
+        #collapse_2.collapse(aria-labelledby='heading_2', data-parent='#sub-menu-container')
+          .cat-body
+            .sub-menu-child Balo to
+            .sub-menu-child Balo bé
+            .sub-menu-child Túi chéo
+            .sub-menu-child Ví
+      .cat
+        #heading_3.cat-header
+          h5.mb-0
+            button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapse_3', aria-expanded='false', aria-controls='collapse_3') Dịch vụ
+        #collapse_3.collapse(aria-labelledby='heading_3', data-parent='#sub-menu-container')
+          .cat-body
+            .sub-menu-child Balo to
+            .sub-menu-child Balo bé
+            .sub-menu-child Túi chéo
+            .sub-menu-child Ví
+      .cat
+        #heading_4.cat-header
+          h5.mb-0
+            button.btn.btn-link.collapsed(data-toggle='collapse', data-target='#collapse_4', aria-expanded='false', aria-controls='collapse_4')
+              | Blog
+  include account-control-modal.pug
+// End Header

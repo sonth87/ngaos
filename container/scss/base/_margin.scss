@@ -27,4 +27,7 @@
     .ml-b#{$i} {
         margin-bottom: -#{$i}px !important;
     }
+    .mt-n#{$i} {
+        margin-top: -#{$i}px;
+    }
 }

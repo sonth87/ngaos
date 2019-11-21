@@ -110,20 +110,26 @@ $(document).ready(function() {
     });
 
     if ($(document).width() <= 480) {
-        $(".product-detail-img-list").slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: true,
-            autoplay: true,
-            autoplaySpeed: 15000,
-            arrows: true
-        });
+        if ($(".product-detail-img-list").length > 0)
+            $(".product-detail-img-list").slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 15000,
+                arrows: true
+            });
     } else {
-        $(".product-detail-content").scrollToFixed({
-            limit:
-                $(".product-description-container").offset().top -
-                $(".product-detail-content").outerHeight(true) -
-                10
-        });
+        if ($(".product-detail-content").length > 0)
+            $(".product-detail-content").scrollToFixed({
+                limit:
+                    $(".product-description-container").offset().top -
+                    $(".product-detail-content").outerHeight(true) -
+                    10
+            });
     }
+
+    $(".header-function .account").on("click", function() {
+        $("#account-control").modal('show');
+    });
 });
