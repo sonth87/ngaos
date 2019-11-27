@@ -2,14 +2,19 @@
 @import "./plp.scss";
 @import "./pdp.scss";
 @import "./contact.scss";
+@import "./cart.scss";
+@import "./shipping.scss";
+@import "./home.scss";
+@import "./why.scss";
 
-
-html, body {
+html,
+body {
     overflow-x: hidden;
 }
 body {
     font-family: Cabin, Roboto;
     max-width: 100%;
+    background: #fff;
 }
 
 /*
@@ -160,7 +165,7 @@ body {
                 margin-left: 20px;
                 position: relative;
                 &:before {
-                    content: '';
+                    content: "";
                     width: 10px;
                     height: 10px;
                     background: $color-2;
@@ -176,7 +181,7 @@ body {
                     margin-bottom: 15px;
                     padding: 0;
                     &:not(.collapsed) {
-                        text-decoration:  none;
+                        text-decoration: none;
                         color: $color-1;
                     }
                 }
@@ -539,6 +544,29 @@ body.menu-open {
                         color: $color-1;
                         font-size: 10px;
                     }
+                }
+            }
+        }
+    }
+}
+
+#account-control {
+    &.modal {
+        .account-form {
+            &.login {
+                .login-form {
+                    display: block !important;
+                }
+                .register-form {
+                    display: none !important;
+                }
+            }
+            &.register {
+                .login-form {
+                    display: none !important;
+                }
+                .register-form {
+                    display: block !important;
                 }
             }
         }

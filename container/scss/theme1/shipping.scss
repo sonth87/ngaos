@@ -1,0 +1,24 @@
+.st-body {
+    .shipping-form {
+        @media (max-width: 480px) {
+            padding-left: 12px;
+            padding-right: 12px;
+            margin-top: 0 !important;
+            form {
+                margin-left: -8px;
+                margin-right: -8px;
+            }
+        }
+    }
+    .shipping-summary {
+        #payment_2 {
+            &:checked ~ .bank-account {
+                display: block !important;
+            }
+        }
+        @media (max-width: 480px) {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+    }
+}

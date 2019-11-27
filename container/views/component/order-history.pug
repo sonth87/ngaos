@@ -1,0 +1,14 @@
+.order-history-list.w-100.pl-50.mt-20
+    .text-h2 Các đơn hàng đã thanh toán
+    .order-history-list-table.mt-40.d-flex.flex-column
+        .list-table-header.d-flex.w-100
+            .col-4.col-sm-8.text-h6.pl-0 Mã đơn hàng
+            .col-4.col-sm-2.text-h6.text-center Thời gian
+            .col-4.col-sm-2.text-h6.text-center Tổng đơn
+        .list-table-content.d-flex.flex-column.w-100
+            each val in [1, 2, 3]
+                .py-20.border-bottom
+                    .order-history-item.d-flex.w-100.flex-start_center
+                        .col-4.col-sm-8.text-h5.text-dark.pl-0.text-notrans Robot limited edtion
+                        .col-4.col-sm-2.text-h5.text-dark.text-center 10 / 10 / 2019
+                        .col-4.col-sm-2.text-h5.text-dark.text-center.d-flex.flex-center 1.500.000

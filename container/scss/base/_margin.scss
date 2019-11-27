@@ -1,4 +1,4 @@
-@for $i from 1 through 100 {
+@for $i from 1 through 150 {
     .mx-#{$i},
     .ml-#{$i} {
         margin-left: #{$i}px !important;

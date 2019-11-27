@@ -55,6 +55,10 @@
                 border-radius: 50%;
             }
         }
+
+        &.scroll-to-fixed-fixed {
+            margin-top: 0px;
+        }
     }
 
     @media (max-width: 480px) {

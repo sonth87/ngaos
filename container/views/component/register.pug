@@ -1,17 +1,22 @@
-.login-form.px-40.pt-35.d-flex.flex-center.flex-column
-    .text-h2.text-primary Tạo tài khoản
-    form.mt-50.w-100
-        .form-group
-            label.text-h5(for="login_name") Họ và tên
-            input#login_name.form-control(type="text" placeholder="Họ và tên")
-        .form-group
-            label.text-h5(for="login_phone") Số điện thoại
-            input#login_phone.form-control(type="text" placeholder="Số điện thoại")
-        .form-group
-            label.text-h5(for="login_email") Email
-            input#login_email.form-control(type="text" placeholder="Email")
-        .form-group
-            label.text-h5(for="login_password") Mật khẩu
-            input#login_password.form-control(type="password" placeholder="Mật khẩu")
-        .form-group.flex-center.mt-60
-            button.st-btn Tạo tài khoản
+.register-form
+    .px-40.pt-35.d-flex.flex-center.flex-column
+        .text-h2.text-primary Tạo tài khoản
+        form.mt-50.w-100
+            .form-group
+                label.text-h5(for="login_name") Họ và tên
+                input#login_name.form-control(type="text" placeholder="Họ và tên")
+            .form-group
+                label.text-h5(for="login_phone") Số điện thoại
+                input#login_phone.form-control(type="text" placeholder="Số điện thoại")
+            .form-group
+                label.text-h5(for="login_email") Email
+                input#login_email.form-control(type="text" placeholder="Email")
+            .form-group
+                label.text-h5(for="login_password") Mật khẩu
+                input#login_password.form-control(type="password" placeholder="Mật khẩu")
+            .form-group.flex-center.mt-60
+                button.st-btn Tạo tài khoản
+    .border-top.py-22.d-flex.flex-center
+        .text-primary.text-h5.text-notrans Bạn đã có tài khoản? 
+            a.do-login(href="#") ĐĂNG NHẬP 
+            | ngay!

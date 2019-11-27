@@ -122,14 +122,39 @@ $(document).ready(function() {
     } else {
         if ($(".product-detail-content").length > 0)
             $(".product-detail-content").scrollToFixed({
-                limit:
-                    $(".product-description-container").offset().top -
-                    $(".product-detail-content").outerHeight(true) -
-                    10
+                marginTop: $('.header').outerHeight(true) + 10,
+                limit: function() {
+                    return $(".product-description-container").offset().top - $(this).outerHeight(true) - 10;;
+                },
+            });
+        if ($(".cart-summary").length > 0)
+            $(".cart-summary").scrollToFixed({
+                marginTop: $('.header').outerHeight(true) + 10,
+                limit: function() {
+                    return $(".st-footer").offset().top - $(this).outerHeight(true) - 10;;
+                },
             });
     }
 
     $(".header-function .account").on("click", function() {
-        $("#account-control").modal('show');
+        $("#account-control").modal("show");
     });
+
+    // Login action
+    $('.do-login').on('click', function() {
+        if(!$('#account-control').is(':visible')) {
+            $('#account-control').modal('show')
+        }
+        $('#account-control .account-form').addClass('login')
+        $('#account-control .account-form').removeClass('register')
+    })
+
+    // Register action
+    $('.do-register').on('click', function() {
+        if(!$('#account-control').is(':visible')) {
+            $('#account-control').modal('show')
+        }
+        $('#account-control .account-form').removeClass('login')
+        $('#account-control .account-form').addClass('register')
+    })
 });

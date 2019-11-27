@@ -39,8 +39,18 @@ img {
         font-size: 14px;
         line-height: 26px;
         height: auto;
+        border-radius: 0;
+        border-color: #DEDFE0;
         &::placeholder {
             color: #999;
+        }
+    }
+}
+
+.flex-between_start {
+    label {
+        &:first-child {
+            margin-top: 4px;
         }
     }
 }

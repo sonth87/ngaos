@@ -16,3 +16,12 @@ $color-4: #666666;
 .text-secondary {
     color: $color-2 !important;
 }
+.text-dark {
+    color: $color-3 !important;
+}
+.text-gray {
+    color: $color-4;
+}
+.text-gray-i {
+    color: $color-4 !important;
+}

@@ -1,0 +1,43 @@
+.st-body {
+    .cart-list, .order-history-list {
+        .cart-list-table, .order-history-list-table {
+            .list-table-content {
+                .border-bottom {
+                    &:last-child {
+                        border-color: transparent !important;
+                    }
+                }
+                i.zmdi.zmdi-close {
+                    font-size: 20px;
+                    color: #aaa;
+                }
+                .de-in {
+                    font-size: 20px;
+                    color: #aaa;
+                    &.pr-10 {
+                        padding-right: 18px !important;
+                    }
+                    &.pl-10 {
+                        padding-left: 18px !important;
+                    }
+                }
+            }
+        }
+        @media (max-width: 480px) {
+            padding-left: 12px;
+            padding-right: 12px;
+            margin-top: 0 !important;
+            .cart-list-table, .order-history-list-table {
+                margin-top: 30px !important;
+            }
+        }
+    }
+    .cart-summary, .account-summary {
+        @media (max-width: 480px) {
+            padding-left: 12px;
+            padding-right: 12px;
+            margin-bottom: 40px;
+            margin-top: 20px;
+        }
+    }
+}

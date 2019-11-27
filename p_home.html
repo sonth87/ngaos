@@ -40,7 +40,7 @@
         <div class="logo text-center flex-1">NGAOS</div>
         <div class="header-function d-flex">
           <div class="favorite-list px-6"><img class="mw-100 mh-100" src="dist/img/flower.svg"/></div>
-          <div class="account px-6"><i class="zmdi zmdi-account-o"></i></div>
+          <div class="account px-6"><img class="mw-100 mh-100" src="dist/img/user.svg"/></div>
           <div class="mini-cart px-6"><img class="mw-100 mh-100" src="dist/img/shopping-bag.svg"/>
             <div class="cart-number">10</div>
           </div>
@@ -129,46 +129,56 @@
       <div class="modal-content">
         <div class="modal-body p-0">
           <div class="d-flex">
-            <div class="col-12 col-sm-5 px-0">
-              <div class="login-form px-40 pt-35 d-flex flex-center flex-column">
-                <div class="text-h2 text-primary">Đăng nhập</div>
-                <form class="mt-50 w-100">
-                  <div class="form-group">
-                    <label class="text-h5" for="login_email">Email</label>
-                    <input class="form-control" id="login_email" type="text" placeholder="Email"/>
-                  </div>
-                  <div class="form-group">
-                    <label class="text-h5" for="login_password">Mật khẩu</label>
-                    <input class="form-control" id="login_password" type="password" placeholder="Mật khẩu"/>
-                  </div>
-                  <div class="form-group flex-center mt-60">
-                    <button class="st-btn">Đăng nhập</button>
-                  </div>
-                </form>
+            <div class="account-form col-12 col-sm-5 px-0 login">
+              <div class="login-form">
+                <div class="px-40 pt-35 d-flex flex-center flex-column">
+                  <div class="text-h2 text-primary">Đăng nhập</div>
+                  <form class="mt-50 w-100">
+                    <div class="form-group">
+                      <label class="text-h5" for="login_email">Email</label>
+                      <input class="form-control" id="login_email" type="text" placeholder="Email"/>
+                    </div>
+                    <div class="form-group">
+                      <label class="text-h5" for="login_password">Mật khẩu</label>
+                      <input class="form-control" id="login_password" type="password" placeholder="Mật khẩu"/>
+                    </div>
+                    <div class="form-group flex-center mt-60">
+                      <button class="st-btn">Đăng nhập</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="border-top py-22 d-flex flex-center">
+                  <div class="text-primary text-h5 text-notrans">Bạn chưa có tài khoản? <a class="do-register" href="#">TẠO TÀI KHOẢN </a>ngay!</div>
+                </div>
               </div>
-              <div class="login-form px-40 pt-35 d-flex flex-center flex-column">
-                <div class="text-h2 text-primary">Tạo tài khoản</div>
-                <form class="mt-50 w-100">
-                  <div class="form-group">
-                    <label class="text-h5" for="login_name">Họ và tên</label>
-                    <input class="form-control" id="login_name" type="text" placeholder="Họ và tên"/>
-                  </div>
-                  <div class="form-group">
-                    <label class="text-h5" for="login_phone">Số điện thoại</label>
-                    <input class="form-control" id="login_phone" type="text" placeholder="Số điện thoại"/>
-                  </div>
-                  <div class="form-group">
-                    <label class="text-h5" for="login_email">Email</label>
-                    <input class="form-control" id="login_email" type="text" placeholder="Email"/>
-                  </div>
-                  <div class="form-group">
-                    <label class="text-h5" for="login_password">Mật khẩu</label>
-                    <input class="form-control" id="login_password" type="password" placeholder="Mật khẩu"/>
-                  </div>
-                  <div class="form-group flex-center mt-60">
-                    <button class="st-btn">Tạo tài khoản</button>
-                  </div>
-                </form>
+              <div class="register-form">
+                <div class="px-40 pt-35 d-flex flex-center flex-column">
+                  <div class="text-h2 text-primary">Tạo tài khoản</div>
+                  <form class="mt-50 w-100">
+                    <div class="form-group">
+                      <label class="text-h5" for="login_name">Họ và tên</label>
+                      <input class="form-control" id="login_name" type="text" placeholder="Họ và tên"/>
+                    </div>
+                    <div class="form-group">
+                      <label class="text-h5" for="login_phone">Số điện thoại</label>
+                      <input class="form-control" id="login_phone" type="text" placeholder="Số điện thoại"/>
+                    </div>
+                    <div class="form-group">
+                      <label class="text-h5" for="login_email">Email</label>
+                      <input class="form-control" id="login_email" type="text" placeholder="Email"/>
+                    </div>
+                    <div class="form-group">
+                      <label class="text-h5" for="login_password">Mật khẩu</label>
+                      <input class="form-control" id="login_password" type="password" placeholder="Mật khẩu"/>
+                    </div>
+                    <div class="form-group flex-center mt-60">
+                      <button class="st-btn">Tạo tài khoản</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="border-top py-22 d-flex flex-center">
+                  <div class="text-primary text-h5 text-notrans">Bạn đã có tài khoản? <a class="do-login" href="#">ĐĂNG NHẬP </a>ngay!</div>
+                </div>
               </div>
             </div>
             <div class="col-7 d-none d-sm-block" style="background-image:url(&quot;dist/img/Image 43.png&quot;);background-size:cover;"></div>
@@ -313,6 +323,52 @@
   </div>
 </section>
 <!-- End Body-->
+<section class="block-4">
+  <div class="container">
+    <div class="grid-title">
+      <div class="grid-title-row d-flex flex-wrap px-50">
+        <div class="col-12 d-flex flex-wrap">
+          <div class="col-12 col-sm-6 px-0">
+            <div class="image-block"><img src="dist/img/Image 43.png"/></div>
+          </div>
+          <div class="col-12 col-sm-6 flex-center px-0">
+            <div class="content-block d-flex flex-center flex-column py-40">
+              <div class="block-title text-h2 text-primary mb-30">Lorem ipsum dolor amet sit</div>
+              <div class="content text-h4 text-truncate-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum eros odio, quis volutpat nisl mattis a. Fusce rhoncus turpis eget sem congue volutpat. Aenean sit amet volutpat arcu. Phasellus tristique malesuada lectus. Phasellus vitae turpis neque. Sed ultrices ipsum rhoncus, eleifend ligula bibendum, tempus elit.</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 d-flex flex-wrap">
+          <div class="col-12 col-sm-6 px-0">
+            <div class="image-block"><img src="dist/img/Image 43.png"/></div>
+          </div>
+          <div class="col-12 col-sm-6 flex-center px-0">
+            <div class="content-block d-flex flex-center flex-column py-40">
+              <div class="block-title text-h2 text-primary mb-30">Lorem ipsum dolor amet sit</div>
+              <div class="content text-h4 text-truncate-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rutrum eros odio, quis volutpat nisl mattis a. Fusce rhoncus turpis eget sem congue volutpat. Aenean sit amet volutpat arcu. Phasellus tristique malesuada lectus. Phasellus vitae turpis neque. Sed ultrices ipsum rhoncus, eleifend ligula bibendum, tempus elit.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="block-5">
+  <div class="container">
+    <div class="home-contact mt-150 mb-80">
+      <div class="home-contact-content d-flex flex-wrap px-50">
+        <div class="col-12 d-flex px-0 flex-wrap">
+          <div class="col-sm-4 col-12"><img src="dist/img/Image 43.png"/>
+            <button class="st-btn">Phản hồi</button>
+          </div>
+          <div class="col-sm-8 col-12"><img src="dist/img/Image 43.png"/>
+            <button class="st-btn">Liên hệ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <!-- Footer-->
 <section class="st-footer">
   <div class="footer-top w-100">

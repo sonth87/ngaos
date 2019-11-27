@@ -1,0 +1,27 @@
+.cart-list.w-100.pl-50.mt-20
+    .text-h1 Giỏ hàng
+    .breadcrum.mt-10 Trang chủ / Giỏ hàng
+    .cart-list-table.mt-40.d-flex.flex-column
+        .list-table-header.d-flex.w-100
+            .col-3.col-sm-7.text-h6.pl-0 Sản phẩm
+            .col-3.col-sm-2.text-h6.text-center Đơn giá
+            .col-3.col-sm-2.text-h6.text-center số lượng
+            .col-3.col-sm-1.text-h6.text-center Remove
+        .list-table-content.d-flex.flex-column.w-100
+            each val in [1, 2, 3, 4, 5]
+                .py-20.border-bottom
+                    .cart-item.d-flex.w-100.mihx-90.flex-start_center
+                        .col-3.col-sm-1.pl-0
+                            img.cart-item-pimage.border(src="dist/img/Image 127.png")
+                        .col-6.text-h5.text-dark.pl-30.d-none.d-sm-block Robot limited edtion
+                        .col-3.col-sm-2.text-h5.text-dark.text-center 500.000
+                        .col-3.col-sm-2.text-h5.text-dark.text-center.d-flex.flex-center
+                            button.de-in.text-gray.pr-10 -
+                            label 1
+                            button.de-in.text-gray.pl-10 +
+                        .col-3.col-sm-1.text-h5.text-dark.text-center
+                            button
+                                i.zmdi.zmdi-close.text-gray
+
+        .d-flex.flex-center.w-100
+            button.st-btn Tiếp tục mua hàng

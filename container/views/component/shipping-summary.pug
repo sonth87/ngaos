@@ -1,0 +1,35 @@
+.shipping-summary.pr-50
+    .border.pt-30.px-40.bg-white
+        .shipping-summary-header.text-h2.mb-60 Đơn hàng (Ahihi)
+        .shipping-summary-detail.d-flex.flex-column
+            .d-flex.flex-between.mb-15
+                label.text-h6 Tổng (3 sản phẩm)
+                label.text-h5.text-dark 1.500.000
+            .d-flex.flex-between.mb-15
+                label.text-h6 Phí ship (mặc định)
+                label.text-h5.text-dark 30.000
+            .d-flex.flex-between_start.mb-15
+                label.text-h6 Mã giảm giá
+                label.text-h5.text-dark.text-right 
+                    | NGAOSFREESHIP <br> -30.000
+            .d-flex.flex-between.text-normal.border-top.py-25.mt-40
+                label.text-h5.text-notrans.text-dark Tổng đơn
+                label.text-h5.text-dark 1.500.000
+
+    .payment-methods.mt-25
+        .payment-method.mb-17
+            input#payment_1.w-20.h-20(type="radio" name="payment-method" checked)
+            label.text-dark.pl-20.text-h5.text-notrans(for="payment_1") Thanh toán khi nhận hàng
+        .payment-method.mb-25
+            input#payment_2.w-20.h-20(type="radio" name="payment-method")
+            label.text-dark.pl-20.text-h5.text-notrans(for="payment_2") Thanh toán bằng hình thức chuyển khoản
+
+            .bank-account.pl-40.text-gray.d-none
+                label.mt-18 Hướng dẫn chuyển khoản: 
+                label.mt-18 Số tài khoản: 083846543970 
+                label.mt-18 Techcombank chi nhánh Hà Nội 
+                label.mt-18 Chủ tài khoản: Nguyễn Văn A 
+                label.mt-18 Cú pháp ghi chú: Mã đơn hàng + Tên khách hàng
+                label.notenote.text-primary.mt-18.text-bold  Confirm nhận tiền sẽ được gửi vào email của bạn!
+        button.st-btn.w-100 Thanh toán
+

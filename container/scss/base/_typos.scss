@@ -674,6 +674,18 @@
   text-transform: uppercase;
 }
 
+.text-lower {
+  text-transform: lowercase;
+}
+
+.text-notrans {
+  text-transform: unset;
+}
+
+.text-normal {
+  font-weight: 100 !important;
+}
+
 // @for $i from 1 through 50 {
 //   .px-#{$i},
 //     .pl-#{$i} {

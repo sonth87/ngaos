@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    include component/head.pug
+
+<body>
+    include component/header.pug
+
+    section.st-body
+        .container
+            .wx-100.bg-white.pt-40.pb-40.d-sm-flex
+                .col-12.col-md-8
+                    include component/cart-list.pug
+                .col-12.col-md-4
+                    include component/cart-summary.pug
+
+    include component/footer.pug
+</body>
+
+</html>
