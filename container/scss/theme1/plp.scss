@@ -167,3 +167,56 @@
         }
     }
 }
+
+
+.lookbook-page {
+    .slide-banner {
+        padding: 60px 12%;
+
+        .slick-dots {
+            transform: translateX(-10%);
+        }
+    }
+    .lb-header {
+        text-align: center;
+        line-height: 0px;
+        transform: translateY(55px);
+        z-index: 5;
+        position: relative;
+    }
+
+    .lb-item {
+        margin-bottom: 20px;
+        &:before {
+            content: "";
+            float: left;
+            padding-top: 100%; 
+        }
+        // .lb-image {
+        //     position: absolute;
+        // }
+        .lb-date {
+            padding: 9px 12px;
+            text-align: center;
+            text-transform: uppercase;
+            width: 70px;
+            height: 70px;
+            background-color: #BA6373;
+            color: #fff;
+            margin: auto;
+            transform: translateY(50%);
+            position: relative;
+            z-index: 1;
+            .lbday {
+                font-size: 30px;
+                line-height: 35px;
+            }
+            .lbmonth {
+                font-size: 12px;
+            }
+        }
+        .lb-name {
+            margin: 20px 0;
+        }
+    }
+}

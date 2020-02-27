@@ -8765,6 +8765,9 @@ ul > li.disabled {
 .mt-n150 {
   margin-top: -150px; }
 
+.m-auto {
+  margin: auto; }
+
 .w-1 {
   width: 1px; }
 
@@ -24720,6 +24723,44 @@ img {
   .st-body .product-list {
     padding-left: 12px;
     padding-right: 12px; } }
+
+.lookbook-page .slide-banner {
+  padding: 60px 12%; }
+  .lookbook-page .slide-banner .slick-dots {
+    transform: translateX(-10%); }
+
+.lookbook-page .lb-header {
+  text-align: center;
+  line-height: 0px;
+  transform: translateY(55px);
+  z-index: 5;
+  position: relative; }
+
+.lookbook-page .lb-item {
+  margin-bottom: 20px; }
+  .lookbook-page .lb-item:before {
+    content: "";
+    float: left;
+    padding-top: 100%; }
+  .lookbook-page .lb-item .lb-date {
+    padding: 9px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 70px;
+    height: 70px;
+    background-color: #BA6373;
+    color: #fff;
+    margin: auto;
+    transform: translateY(50%);
+    position: relative;
+    z-index: 1; }
+    .lookbook-page .lb-item .lb-date .lbday {
+      font-size: 30px;
+      line-height: 35px; }
+    .lookbook-page .lb-item .lb-date .lbmonth {
+      font-size: 12px; }
+  .lookbook-page .lb-item .lb-name {
+    margin: 20px 0; }
 
 .st-body .product-detail-img-list img {
   margin-right: 0;
